@@ -12,7 +12,7 @@
           "
         >
           <div class="col-sm-12">
-            <h4 class="mb-3">Add new product</h4>
+            <h4 class="mb-3">Edit product</h4>
             <div class="needs-validation" novalidate>
               <div class="row g-2">
                 <div v-if="!submitted">
