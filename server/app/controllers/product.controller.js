@@ -2,7 +2,6 @@ const db = require('../models')
 const Product = db.products
 const OP = db.Sequelize.Op
 
-//when you write something(modify the code for the server), you need to stop the server and restart it
 exports.findAll = (req, res) => {
    Product.findAll()
    .then(data => {
@@ -16,7 +15,6 @@ exports.findAll = (req, res) => {
 }
 
 exports.create = (req, res) => {
-   // console.log(req.body)
    Product.create(req.body)
       .then(data => {
          res.send(data)

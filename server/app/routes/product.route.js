@@ -13,5 +13,5 @@ module.exports = app => {
 
    router.put('/:id', product.update)
 
-   app.use('/api/product', router) // if you type localhost:8080/api/product 하면 findAll 결과가 나옴
+   app.use('/api/product', router)
 }

@@ -15,9 +15,6 @@ module.exports = (connex, Sequelize) => {
       category: {
          type: Sequelize.STRING
       },
-      stock: {
-         type: Sequelize.STRING
-      }
    })
    return Product
 }

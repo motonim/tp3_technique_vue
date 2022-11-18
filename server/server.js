@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const app = express()
 const corsOption = {
-   origin: 'http://localhost:8081'  // cors(중간자역할) will request and receive the db and send it to vue.js 
+   origin: 'http://localhost:8081'
 }
 
 app.use(cors(corsOption))
@@ -12,7 +12,7 @@ app.use(cors(corsOption))
 const db = require('./app/models')
 
 //sequelize
-db.connex.sync() // il va tout synchroniser avec les choses dans models/index.js
+db.connex.sync()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
