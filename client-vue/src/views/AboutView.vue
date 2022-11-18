@@ -21,7 +21,6 @@
           trentaine de magasins à travers le Canada.
         </p>
         <img src='@/assets/img/aboutPage.jpg' className='mt-5'>
-        <!-- './assets/css/styles.css' -->
       </main>
     </div>
   </div>

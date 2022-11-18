@@ -18,33 +18,8 @@
           <li class="list-group-item">
             Category: {{ product.category }}
           </li>
-          <li class="list-group-item">
-            Status: {{ product.stock }}
-          </li>
         </ul>
       </div>
-      <!-- <div class="col col-md-3">
-        <div class="card">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col">Prix:</div>
-                <div class="col">
-                  <strong>$ {{ product.price}}</strong>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col">Status:</div>
-                <div class="col">
-                  {{ product.stock }}
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>

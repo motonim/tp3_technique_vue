@@ -93,21 +93,6 @@
                       Valid photo path is required.
                     </div>
                   </div>
-                  <div class="col-12 mt-3">
-                    <label for="stock" class="form-label">Product Stock</label>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="stock" id="Disponible" checked>
-                      <label class="form-check-label" for="Disponible">
-                        Disponible
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="stock" id="Indisponible">
-                      <label class="form-check-label" for="Indisponible">
-                        Indisponible
-                      </label>
-                    </div>
-                  </div>
                   <button class="w-100 btn btn-primary btn-lg mt-3" type="button" @click="saveProduct">Save </button>
                 </div>
                 <div v-else>
@@ -149,8 +134,7 @@ export default {
     saveProduct () {
       ProductDataService.create(this.product)
         .then(response => {
-          // console.log(response.data.id)
-          this.product.id = response.data.id // id가 data에 존재하지 않으므로 id 부여하는 과정
+          this.product.id = response.data.id
           this.addInv(this.product)
           this.submitted = true
         })

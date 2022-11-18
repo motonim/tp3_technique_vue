@@ -93,21 +93,6 @@
                       Valid photo path is required.
                     </div>
                   </div>
-                  <div class="col-12 mt-3">
-                    <label for="stock" class="form-label">Product Stock</label>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="stock" id="Disponible" checked>
-                      <label class="form-check-label" for="Disponible">
-                        Disponible
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="stock" id="Indisponible">
-                      <label class="form-check-label" for="Indisponible">
-                        Indisponible
-                      </label>
-                    </div>
-                  </div>
                   <button class="w-100 btn btn-primary btn-lg mt-3" type="button" @click="updateProduct">Update </button>
                 </div>
                 <div v-else>
